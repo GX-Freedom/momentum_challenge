@@ -6,7 +6,7 @@ const IMG_NUMBER = 12;
 
 function paintImage(IMG_NUMBER) {
     const image = new Image();
-    image.src = `../images/${genRandom() + 1}.jpg`;
+    image.src = `./images/${genRandom() + 1}.jpg`;
     image.classList.add("backgroundimg");
     body.appendChild(image);
 }

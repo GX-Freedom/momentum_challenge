@@ -123,7 +123,7 @@ i:hover{
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
     z-index: 1;
-    margin-top: 45.5rem;
+    margin-top: 32rem;
 }
 .fixed>span{
     display: block;
@@ -142,8 +142,7 @@ i:hover{
     text-decoration: none;
     color: yellow;
 }
-.fixed{
-}
+
 .clicker:hover{
     cursor: pointer;
 }
