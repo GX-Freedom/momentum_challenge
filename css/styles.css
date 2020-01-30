@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2C3A47;
+    color: white;
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2.3rem;
+
+}
+.nav{
+    display: flex;
+    border:  2px solid green;
+    text-align: center;
+    justify-content: center;
+    margin:5px;
+    flex-direction: column;
+
+}
+.nav_inbox{
+    display: flex;
+    justify-content: center;
+    margin:5px;
+
+}
+.nav_inbox >div{
+    border:  1px solid rgba(137, 43, 226, 0.2);
+    border-radius: 100%;
+    padding: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.nav_inbox > div > span{
+    display: none;
+
+}
+i:hover{
+    cursor: pointer;
+}
+
+.sections{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border:  2px solid blueviolet;
+}
+
+.articles {
+    border:  2px solid red;
+}
+
+.articles>div {
+    text-align: center;
+    border:  2px solid red;
+
+}
+
+
+.js-clock{
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.js-greetings{
+    font-size: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 100%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.055);
+
+}
+
+.js-toDoList>li{
+    font-size: 2rem;
+    list-style: none;
+}
+.js-toDoList > li > button{
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 2px rgba(235, 7, 7, 0.63),
+    0px 4px 2px 2px rgba(10, 151, 194, 0.801);
+    cursor: pointer;
+}
+.js-toDoList > li > button:active{
+    transform: translateY(5px);
+    box-shadow: 0px -3.5px 2px 2px rgba(235, 7, 7, 0.63),
+    0px 1px 2px 2px rgba(10, 151, 194, 0.801);
+}
+
+
+.btn{
+    cursor: pointer;
+}
+
+.form, .greetings
+{
+    display: none;
+}
+.showing{
+    display: block;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    border:  2px solid yellow;
+}
+
+.footer{
+    position: fixed;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    z-index: 1;
+    margin-top: 45.5rem;
+}
+.fixed>span{
+    display: block;
+    color: black;
+}
+.footer::before{
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    width: 15rem;
+    border:  1.2px;
+    border-top: 1px solid white;
+
+}
+.fixed>div>a{
+    text-decoration: none;
+    color: yellow;
+}
+.fixed{
+}
+.clicker:hover{
+    cursor: pointer;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.backgroundimg{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes helloanimation
+{
+    25%{
+        color: red;
+    }
+    55%{
+        color: green;
+    }
+    75%{
+        color: blueviolet;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+#title{
+    animation: helloanimation 4.5s infinite;
+}
+
+@media media{
+
+}
