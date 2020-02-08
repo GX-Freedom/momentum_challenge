@@ -17,7 +17,6 @@ body{
 }
 .nav{
     display: flex;
-    border:  2px solid green;
     text-align: center;
     justify-content: center;
     margin:5px;
@@ -48,16 +47,10 @@ i:hover{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    border:  2px solid blueviolet;
-}
-
-.articles {
-    border:  2px solid red;
 }
 
 .articles>div {
     text-align: center;
-    border:  2px solid red;
 
 }
 
@@ -71,7 +64,6 @@ i:hover{
 
 .js-greetings{
     font-size: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.7);
     border-radius: 100%;
     padding: 0.5rem;
     background-color: rgba(255, 255, 255, 0.055);
@@ -96,7 +88,11 @@ i:hover{
     0px 1px 2px 2px rgba(10, 151, 194, 0.801);
 }
 
+ul{
+position: relative;
+margin: 0 auto;
 
+}
 .btn{
     cursor: pointer;
 }
@@ -112,7 +108,6 @@ i:hover{
 .side{
     display: flex;
     align-items: center;
-    border:  2px solid yellow;
 }
 
 .footer{
@@ -135,7 +130,6 @@ i:hover{
     margin: 1rem auto;
     width: 15rem;
     border:  1.2px;
-    border-top: 1px solid white;
 
 }
 .fixed>div>a{
