@@ -6,6 +6,7 @@ body{
     background-color: #2C3A47;
     color: white;
     width: 100%;
+    min-height: 100vh;
 }
 
 .header{
@@ -48,7 +49,10 @@ i:hover{
     justify-content: space-between;
     text-align: center;
 }
+.articles{
+    flex:1;
 
+}
 .articles>div {
     text-align: center;
 
@@ -107,7 +111,10 @@ margin: 0 auto;
 
 .side{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex:2;
 }
 
 .footer{
@@ -118,23 +125,30 @@ margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
     z-index: 1;
-    margin-top: 32rem;
+    bottom: 0;
 }
 .fixed>span{
-    display: block;
     color: black;
+    font-size: 1.2rem;
 }
+
 .footer::before{
     content: "";
     display: block;
     margin: 1rem auto;
     width: 15rem;
     border:  1.2px;
-
 }
-.fixed>div>a{
+
+.fixed>div>span>a{
+    font-size: 1.3rem;
     text-decoration: none;
-    color: yellow;
+    color: greenyellow;
+}
+
+.fixed>div>span>a:hover{
+
+    animation: helloanimation 4.5s linear forwards;
 }
 
 .clicker:hover{
@@ -178,7 +192,22 @@ margin: 0 auto;
 #title{
     animation: helloanimation 4.5s infinite;
 }
+@media screen and (max-width: 600px)
+{
+    .sections{
+        display: flex;
+        flex-direction: column;
+    }
+    .side{
+        order: -1;
+        align-items: center;
 
-@media media{
-
+    }
+    .js-clock{
+        padding-top: 0;
+    }
+    .fixed>div{
+        display: flex;
+        flex-direction: column;
+    }
 }
